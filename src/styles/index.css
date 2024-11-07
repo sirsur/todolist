@@ -1,0 +1,180 @@
+html,
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: Roboto;
+    background-color: #4f5261;
+    color: #f6f5f6;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1rem;
+}
+
+p {
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+button:hover {
+    color: #4f5261;
+}
+
+section {
+    padding: 2rem 3rem 2rem 3rem;
+    margin: 1rem 0 1rem 0;
+    background-color: #8f8992;
+    border-radius: 1rem;
+}
+
+input {
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #4f5261;
+    border-radius: 0.5rem;
+}
+
+a {
+    color: #8f8992;
+    text-decoration: none;
+
+    &:hover {
+        color: #f6f5f6;
+    }
+}
+
+.loginDiv {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.loginDiv button {
+    width: 30%;
+    color: #f6f5f6;
+    background-color: #517cb9;
+    border-radius: 0.5rem;
+    border: 1px solid #4f5261;
+}
+
+.loginDiv button:hover {
+    color: #f6f5f6;
+    background-color: #2a65b9;
+}
+
+.logOutButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    color: #8f8992;
+}
+
+.logOutButton:hover {
+    color: #f6f5f6;
+}
+
+.addRemoveTaskSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addRemoveTaskSection button {
+    color: #f6f5f6;
+}
+
+.addDiv {
+    height: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.addButton {
+    width: 30%;
+    background-color: #517cb9;
+    border-radius: 0.5rem;
+    border: 1px solid #4f5261;
+}
+
+.addButton:hover {
+    color: #f6f5f6;
+    background-color: #2a65b9;
+}
+
+.removeButton {
+    width: 20%;
+    height: 2rem;
+    background-color: #b24f50;
+    border-radius: 0.5rem;
+    border: 1px solid #4f5261;
+}
+
+.removeButton:hover {
+    color: #f6f5f6;
+    background-color: #b23e3f;
+}
+
+.tasksSection {
+    padding: 2rem 15rem 2rem 15rem;
+}
+
+.tasksTypesDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tasksTypesDiv button {
+    padding: 0.5rem 1rem;
+    color: #c1bec4;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.tasksTypesDiv button:focus {
+    outline: none;
+}
+
+.tasksTypesDiv button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.tasksTypesDiv button:hover::after {
+    background-color: #517cb9;
+}
+
+.tasksTypesDiv button:hover {
+    color: #f6f5f6;
+}
+
+.taskDiv {
+    padding: 1rem;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #f6f5f6;
+    border-radius: 0 1rem 0 1rem;
+}
